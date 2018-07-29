@@ -27,7 +27,7 @@ ORDER BY dif DESC'''.format(start_date, end_date)
 
 c.execute(query)
 
-with open("out.csv", "w", newline='') as csv_file:
+with open("output/out.csv", "w", newline='') as csv_file:
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow([i[0] for i in c.description])
     csv_writer.writerows(c)
