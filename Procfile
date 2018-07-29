@@ -1,1 +1,1 @@
-web: python -m http.server $PORT
+web: (cd ebay/ebay/output; python -m http.server $PORT)
